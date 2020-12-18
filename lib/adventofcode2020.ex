@@ -1,18 +1,7 @@
 defmodule Adventofcode2020 do
-  @moduledoc """
-  Documentation for `Adventofcode2020`.
-  """
+  def read(filename) do
+    path = Path.join(:code.priv_dir(:adventofcode2020), filename)
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Adventofcode2020.hello()
-      :world
-
-  """
-  def hello do
-    :world
+    File.read(path)
   end
 end
